@@ -26,6 +26,8 @@ function History(props) {
               <br />
               Waka Time Code Hours
               <br />
+              <a href="https://wakatime.com/@3cc29f21-d026-475a-a28f-a86786654c5a"><img src="https://wakatime.com/badge/user/3cc29f21-d026-475a-a28f-a86786654c5a.svg" alt="Total time coded since Nov 2 2021" /></a>
+              <br />
               "Your most active day was Mon Aug 22nd with 12 hrs 12 mins of
               activity".
               </p>

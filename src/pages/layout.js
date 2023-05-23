@@ -14,6 +14,9 @@ function Layout() {
             <Nav.Link eventKey={2} href="/details">
             <p className='lead'>Core</p>
             </Nav.Link>
+            <Nav.Link eventKey={3} href="/projects">
+            <p className='lead'>Projects</p>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
