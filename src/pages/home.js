@@ -26,8 +26,6 @@ function Home() {
       }}
     >
       <Layout />
-      <Row className="d-flex">
-        <Col>
           <svg
             id="logo"
             fill="none"
@@ -96,8 +94,6 @@ function Home() {
               strokeWidth="5"
             />
           </svg>
-        </Col>
-      </Row>
 
       <Container fluid>
       <Col className="my-2 animate__animated animate__fadeIn animate__slow animate__delay-1s">
