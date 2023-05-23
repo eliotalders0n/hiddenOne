@@ -1,41 +1,24 @@
-import { Outlet, Link } from 'react-router-dom';
-import 'bulma/css/bulma.min.css';
-import 'animate.css';
-import './../App.css';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-const Layout = () => {
-    return (
-        <div className="hero is-large">
-            <div className="hero-head is-large">
-                <nav className="navbar">
-                    <div className="container">
-                        <div className="navbar-brand">
-                            <h1 className="navbar-item animate__animated animate__pulse animate__repeat-2">
-                                <Link to="/"><b>Hidd3nOne</b></Link>
-                            </h1>
-                            <span className="navbar-burger" data-target="navbarMenuHeroA">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </span>
-                        </div>
-                        <div id="navbarMenuHeroA" className="navbar-menu">
-                            <div className="navbar-end" id='nav-items'>
-                                <p className="navbar-item">
-                                    <Link to="/Details">Jump-In</Link>
-                                </p>
-                                <p className="navbar-item">
-                                    <Link to="/Profile">Core</Link>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                <Outlet />
-            </div>
-        </div>
-    );
+function Layout() {
+  return (
+    <Navbar collapseOnSelect expand="lg" style={{ backgroundColor: "rgb(220,220,220)" }}>
+      <Container>
+        <Navbar.Brand href="/"><h5 className='display-5'>PUKUTA .M</h5></Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+          <Nav>
+            <Nav.Link href="/profile"><p className='lead'>Jump-In</p></Nav.Link>
+            <Nav.Link eventKey={2} href="/details">
+            <p className='lead'>Core</p>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
-
 
 export default Layout;
