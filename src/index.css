@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.FirstPage {
+  /* background-color: gray; */
+  margin-left: 70vh;
+  width: 60vh;
+  text-align: left;
+  padding: 30px;
+  margin-top: 20vh;
+}
+
+.FirstPage h1{
+  text-align: center;
+}
+
+.FirstPage input{
+  margin-left: 3vh;
+  margin-top: 2vh;
+  border: none;
+  padding: 3vh;
+  width: 80%;
+  box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.FirstPage button {
+  margin-left: 15vh;
+  margin-top: 2vh;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  width: 50%;
+  box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.3);
+}
