@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Card, ListGroup } from "react-bootstrap";
+import { Row, Col, Card } from "react-bootstrap";
 
 function GamesCard(props) {
   return (
@@ -11,7 +11,7 @@ function GamesCard(props) {
       >
         <Col>
           <a
-            // href="https://merge-bd5de.web.app/"
+            href="#"
             style={{ textDecoration: "none" }}
           >
             <Row
@@ -52,7 +52,7 @@ function GamesCard(props) {
       >
         <Col>
           <a
-            // href="https://merge-bd5de.web.app/"
+            href="#"
             style={{ textDecoration: "none" }}
           >
             <Card
@@ -83,7 +83,7 @@ function GamesCard(props) {
 
         <Col>
           <a
-            // href="https://hospitalfinder.web.app/"
+            href="#"
             style={{ textDecoration: "none" }}
           >
             <Card
@@ -137,7 +137,7 @@ function GamesCard(props) {
 
         <Col>
           <a
-            // href="https://eliotalders0n.github.io/slushy/"
+            href="#"
             style={{ textDecoration: "none" }}
           >
             <Card
@@ -171,7 +171,7 @@ function GamesCard(props) {
       >
         <Col>
           <a
-            // href="https://eliotalders0n.github.io/alba.associates/"
+            href="#"
             style={{ textDecoration: "none" }}
           >
             <Card
@@ -199,7 +199,7 @@ function GamesCard(props) {
 
         <Col>
           <a
-            // href="https://eliotalders0n.github.io/HoodHunk/"
+            href="#"
             style={{ textDecoration: "none" }}
           >
             <Card
@@ -228,7 +228,7 @@ function GamesCard(props) {
 
         <Col>
           <a
-            // href="https://eliotalders0n.github.io/martialbnkisu/"
+            href="#"
             style={{ textDecoration: "none" }}
           >
             <Card
@@ -256,7 +256,7 @@ function GamesCard(props) {
 
         <Col>
           <a
-            // href="https://eliotalders0n.github.io/Sigma/"
+            href="#"
             style={{ textDecoration: "none" }}
           >
             <Card
