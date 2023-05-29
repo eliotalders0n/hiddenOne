@@ -28,34 +28,17 @@ function GamesCard(props) {
               </Col>
 
               <Col>
-                <Card style={{backgroundColor: "rgba(0,0,0,0.2)", height: "27vh"}}>
-                  <Card.Body
-                    style={{
-                      backgroundColor: "none",
-                      color: "white",
-                    }}
-                  >
-                    <Card.Title>
-                      <h4 className="display-4">Pukuta M . XBOX</h4>
-                    </Card.Title>
-                    <Card.Text>
+                     <h4 className="display-4">Pukuta M . XBOX</h4>                   
                         <Row md={2}>
                     <p className="lead">Followers<h5 className="display-3">6</h5></p>
                     <p className="lead">Friends<h5 className="display-3">83</h5></p>
                     </Row>
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
+                    
               </Col>
               <Col>
-              <Card style={{backgroundColor: "rgba(0,0,0,0.3)",  color: "white", height: "27vh"}}>
-                <Card.Body
-                >
                     <h4 className="display-5">Last seen 14h ago: Home</h4>
-                    <h4 className="display-5">Location Lusaka zambia</h4>
-                    <h4 className="display-5">Bio Things that work</h4>
-                </Card.Body>
-                </Card>
+                    <h4 className="display-5">Location: Lusaka Zambia</h4>
+                    <h4 className="display-5">Bio: Things that work</h4>
               </Col>
             </Row>
           </a>

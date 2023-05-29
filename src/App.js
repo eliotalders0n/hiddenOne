@@ -7,6 +7,7 @@ import Home from "./pages/home";
 import Profile from "./pages/profile";
 import Projects from "./pages/file";
 import Games from "./pages/games";
+import Art from "./pages/art";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/details" element={<Details />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/games" element={<Games />} />
+        <Route path="/art" element={<Art />} />
       </Routes>
     </BrowserRouter>
   );

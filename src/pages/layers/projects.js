@@ -12,8 +12,7 @@ function ProjectCard(props) {
       <Col>
       <a href="https://merge-bd5de.web.app/" style={{textDecoration: "none"}}>
         <Card style={{
-            backgroundImage:
-              'url("https://img.freepik.com/free-vector/tiny-business-people-generating-ideas-holding-gears-big-light-bulb-idea-management-alternative-thinking-best-solution-choice-concept-illustration_335657-2555.jpg?w=1380&t=st=1684855265~exp=1684855865~hmac=f4fc5f867919865d861589044f42c2495dd4f5d652cd78f6a5bc93c2a429aa1a")',
+            backgroundColor : "rgba(10,10,10,0.2)",
             backgroundSize: "cover",
               
           }}>
@@ -29,8 +28,7 @@ function ProjectCard(props) {
       <Col>
       <a href="https://hospitalfinder.web.app/" style={{textDecoration: "none"}}>
         <Card style={{
-            backgroundImage:
-              'url("https://img.freepik.com/free-vector/tiny-business-people-generating-ideas-holding-gears-big-light-bulb-idea-management-alternative-thinking-best-solution-choice-concept-illustration_335657-2555.jpg?w=1380&t=st=1684855265~exp=1684855865~hmac=f4fc5f867919865d861589044f42c2495dd4f5d652cd78f6a5bc93c2a429aa1a")',
+            backgroundColor : "rgba(10,10,10,0.2)",
             backgroundSize: "cover",
               
           }}>
@@ -46,8 +44,7 @@ function ProjectCard(props) {
       <Col>
       <a href="https://careann.web.app/" style={{textDecoration: "none"}}>
         <Card style={{
-            backgroundImage:
-              'url("https://img.freepik.com/free-vector/tiny-business-people-generating-ideas-holding-gears-big-light-bulb-idea-management-alternative-thinking-best-solution-choice-concept-illustration_335657-2555.jpg?w=1380&t=st=1684855265~exp=1684855865~hmac=f4fc5f867919865d861589044f42c2495dd4f5d652cd78f6a5bc93c2a429aa1a")',
+            backgroundColor : "rgba(10,10,10,0.2)",
             backgroundSize: "cover",
               
           }}>
@@ -63,8 +60,7 @@ function ProjectCard(props) {
       <Col>
       <a href="https://eliotalders0n.github.io/slushy/" style={{textDecoration: "none"}}>
         <Card style={{
-            backgroundImage:
-              'url("https://img.freepik.com/free-vector/tiny-business-people-generating-ideas-holding-gears-big-light-bulb-idea-management-alternative-thinking-best-solution-choice-concept-illustration_335657-2555.jpg?w=1380&t=st=1684855265~exp=1684855865~hmac=f4fc5f867919865d861589044f42c2495dd4f5d652cd78f6a5bc93c2a429aa1a")',
+            backgroundColor : "rgba(10,10,10,0.2)",
             backgroundSize: "cover",
               
           }}>
@@ -86,8 +82,7 @@ function ProjectCard(props) {
       <Col>
       <a href="https://eliotalders0n.github.io/alba.associates/" style={{textDecoration: "none"}}>
         <Card style={{
-            backgroundImage:
-              'url("https://img.freepik.com/free-vector/tiny-business-people-generating-ideas-holding-gears-big-light-bulb-idea-management-alternative-thinking-best-solution-choice-concept-illustration_335657-2555.jpg?w=1380&t=st=1684855265~exp=1684855865~hmac=f4fc5f867919865d861589044f42c2495dd4f5d652cd78f6a5bc93c2a429aa1a")',
+            backgroundColor : "rgba(10,10,10,0.2)",
             backgroundSize: "cover",
               
           }}>
@@ -103,8 +98,7 @@ function ProjectCard(props) {
       <Col>
       <a href="https://eliotalders0n.github.io/HoodHunk/" style={{textDecoration: "none"}}>
         <Card style={{
-            backgroundImage:
-              'url("https://img.freepik.com/free-vector/tiny-business-people-generating-ideas-holding-gears-big-light-bulb-idea-management-alternative-thinking-best-solution-choice-concept-illustration_335657-2555.jpg?w=1380&t=st=1684855265~exp=1684855865~hmac=f4fc5f867919865d861589044f42c2495dd4f5d652cd78f6a5bc93c2a429aa1a")',
+            backgroundColor : "rgba(10,10,10,0.2)",
             backgroundSize: "cover",
               
           }}>
@@ -120,8 +114,7 @@ function ProjectCard(props) {
       <Col>
       <a href="https://eliotalders0n.github.io/martialbnkisu/" style={{textDecoration: "none"}}>
         <Card style={{
-            backgroundImage:
-              'url("https://img.freepik.com/free-vector/tiny-business-people-generating-ideas-holding-gears-big-light-bulb-idea-management-alternative-thinking-best-solution-choice-concept-illustration_335657-2555.jpg?w=1380&t=st=1684855265~exp=1684855865~hmac=f4fc5f867919865d861589044f42c2495dd4f5d652cd78f6a5bc93c2a429aa1a")',
+            backgroundColor : "rgba(10,10,10,0.2)",
             backgroundSize: "cover",
               
           }}>
@@ -137,8 +130,7 @@ function ProjectCard(props) {
       <Col>
       <a href="https://eliotalders0n.github.io/Sigma/" style={{textDecoration: "none"}}>
         <Card style={{
-            backgroundImage:
-              'url("https://img.freepik.com/free-vector/tiny-business-people-generating-ideas-holding-gears-big-light-bulb-idea-management-alternative-thinking-best-solution-choice-concept-illustration_335657-2555.jpg?w=1380&t=st=1684855265~exp=1684855865~hmac=f4fc5f867919865d861589044f42c2495dd4f5d652cd78f6a5bc93c2a429aa1a")',
+            backgroundColor : "rgba(10,10,10,0.2)",
             backgroundSize: "cover",
               
           }}>

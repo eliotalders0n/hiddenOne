@@ -9,13 +9,14 @@ const Games = () => {
       fluid
       style={{
         padding: "0",
-        backgroundImage:
-          'url("./assets/games/mortal-kombat-1.jpg")',
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
+        // backgroundImage:
+        //   'url("./assets/games/mortal-kombat-1.jpg")',
+        //   backgroundRepeat: "no-repeat",
+        //   backgroundPosition: "center",
+        //   backgroundSize: "cover",
+        //   backgroundAttachment: "fixed",
         backgroundColor: "rgba(100,100,100,0.1)",
-        height: "100vh",
+        height: "auto",
       }}
     >
       <Layout />

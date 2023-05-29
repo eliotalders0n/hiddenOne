@@ -22,15 +22,17 @@ function Web(props) {
               style={{ backgroundColor: "rgba(10,10,10,0.5)", color: "white" }}
             >
               <Card.Title>
-                <h5 className="display-5">HTML | CSS | React</h5>
+                <h5 className="display-5">HTML | CSS</h5>
               </Card.Title>
               <Card.Text>
                 <p className="lead">
-                  My older brother handed me a book on web design back in 2014.
+                  My older brother handed me a book on web design back in 2014.<br/>
                   I picked up a paper and pen, started taking down notes like I
                   was in lecture. Long story short, RINSE and REPEAT. Hyper Text
                   Markup Language
                 </p>
+                <br/>
+                <br/>
               </Card.Text>
             </Card.Body>
 
@@ -38,7 +40,7 @@ function Web(props) {
               style={{ backgroundColor: "rgba(10,10,10,0.5)", color: "white" }}
             >
               <Card.Title>
-                <h5 className="display-5">Native / Expo</h5>
+                <h5 className="display-5">React Native / Expo</h5>
               </Card.Title>
               <Card.Text>
                 <p className="lead">
@@ -66,6 +68,17 @@ function Web(props) {
               </Card.Title>
               <Card.Text>
                 <p className="lead">Love the Django framework</p>
+              </Card.Text>
+            </Card.Body>
+
+            <Card.Body
+              style={{ backgroundColor: "rgba(10,10,10,0.5)", color: "white" }}
+            >
+              <Card.Title>
+                <h5 className="display-5">Firebase</h5>
+              </Card.Title>
+              <Card.Text>
+                <p className="lead">Login init deploy</p>
               </Card.Text>
             </Card.Body>
 

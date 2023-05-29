@@ -10,16 +10,19 @@ function Layout() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
           <Nav>
-            <Nav.Link href="/profile"><p className='lead'>Jump-In</p></Nav.Link>
             <Nav.Link eventKey={2} href="/details">
-            <p className='lead'>Core</p>
+            <p className='lead'>Proficiencies</p>
             </Nav.Link>
             <Nav.Link eventKey={3} href="/projects">
-            <p className='lead'>Projects</p>
+            <p className='lead'>Endeavors</p>
             </Nav.Link>
-            <Nav.Link eventKey={3} href="/games">
-            <p className='lead'>Games</p>
+            <Nav.Link eventKey={4} href="/games">
+            <p className='lead'>Ludology</p>
             </Nav.Link>
+            <Nav.Link eventKey={5} href="/art">
+            <p className='lead'>Aesthetics</p>
+            </Nav.Link>
+            <Nav.Link href="/profile"><p className='lead'>Implements</p></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

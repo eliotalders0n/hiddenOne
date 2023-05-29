@@ -15,8 +15,7 @@ function Tools(props) {
             <Card.Title><h5 className="display-5">EDITORS</h5></Card.Title>
             <Card.Text>
             <p className="lead">
-              VS Code Visual Studio Community Edition Netbeans 12.6 Android
-              Studio Jetbrains
+              VS-Code Visual-Studio-Community-Edition Netbeans-12.6 Android-Studio-Jetbrains
               </p>
             </Card.Text>
           </Card.Body>
@@ -31,10 +30,10 @@ function Tools(props) {
           }}>
           
              <Card.Body style={{backgroundColor: "rgba(10,10,10,0.5)", color: "white"}}>
-            <Card.Title>Skills</Card.Title>
+            <Card.Title><h5 className="display-5">Skills</h5></Card.Title>
             <Card.Text><p className="lead">
-              Figma Office Suite Postman Linux "Ubuntu" | "Kali" | "Mint". KDE |
-              Debian | Arch Microsoft Sql Server Manager Ngrok
+              Figma Office-Suite Postman Linux-["Ubuntu" | "Kali" | "Mint". KDE |
+              Debian | Arch] Microsoft-Sql-Server-Manager Ngrok Jira 
               </p>
             </Card.Text>
           </Card.Body>

@@ -7,7 +7,7 @@ import Equip from "./layers/equipment";
 
 function Profile(props) {
   return (
-    <Container fluid style={{ padding: "0", backgroundColor: "rgba(100,100,100,0.1)", height:"100vh"}}>
+    <Container fluid style={{ padding: "0", backgroundColor: "rgba(100,100,100,0.1)", height:"auto"}}>
       <Layout />
       <br/>
       <Container fluid>
