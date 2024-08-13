@@ -15,13 +15,13 @@ const Games = () => {
         //   backgroundPosition: "center",
         //   backgroundSize: "cover",
         //   backgroundAttachment: "fixed",
-        backgroundColor: "rgba(100,100,100,0.1)",
+        backgroundColor: "#222222",
         height: "auto",
       }}
     >
       <Layout />
       <br />
-      <Container fluid>
+      <Container>
         <GamesCard />
         <br />
       </Container>

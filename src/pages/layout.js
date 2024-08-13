@@ -1,28 +1,53 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
 function Layout() {
   return (
-    <Navbar collapseOnSelect expand="lg" style={{ backgroundColor: "rgb(220,220,220)" }}>
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      style={{ backgroundColor: "rgba(110,110,110, 0.2)" }}
+    >
       <Container>
-        <Navbar.Brand href="/"><h5 className='display-5'>PUKUTA .M</h5></Navbar.Brand>
+        <Navbar.Brand href="/">
+          <h5 className="display-3"></h5>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+        <Navbar.Collapse
+          id="responsive-navbar-nav"
+          className="justify-content-end"
+        >
           <Nav>
             <Nav.Link eventKey={2} href="/details">
-            <p className='lead'>Proficiencies</p>
+              <h3 className="lead" style={{ color: "#777777" }}>
+                <strong>Proficiencies</strong>
+              </h3>
             </Nav.Link>
             <Nav.Link eventKey={3} href="/projects">
-            <p className='lead'>Endeavors</p>
+              <h3 className="lead" style={{ color: "#777777" }}>
+                {" "}
+                <strong>Endeavors</strong>{" "}
+              </h3>
             </Nav.Link>
             <Nav.Link eventKey={4} href="/games">
-            <p className='lead'>Ludology</p>
+              <h3 className="lead" style={{ color: "#777777" }}>
+                {" "}
+                <strong>Ludology</strong>{" "}
+              </h3>
             </Nav.Link>
             <Nav.Link eventKey={5} href="/art">
-            <p className='lead'>Aesthetics</p>
+              <h3 className="lead" style={{ color: "#777777" }}>
+                {" "}
+                <strong>Aesthetics</strong>{" "}
+              </h3>
             </Nav.Link>
-            <Nav.Link href="/profile"><p className='lead'>Implements</p></Nav.Link>
+            <Nav.Link href="/profile">
+              <h3 className="lead" style={{ color: "#777777" }}>
+                {" "}
+                <strong>Implements</strong>{" "}
+              </h3>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

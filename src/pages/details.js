@@ -7,17 +7,20 @@ import Web from "./layers/web";
 
 function Details(props) {
   return (
-    <Container fluid style={{ padding: "0", backgroundColor: "rgba(100,100,100,0.1)", height:"auto"}}>
+    <Container
+      fluid
+      style={{ padding: "0", backgroundColor: "#222222", height: "auto" }}
+    >
       <Layout />
       <br />
-      <Container fluid>
+      <Container>
         <Mission />
         <br />
         <Web />
         <br />
         <p className="lead text-center">
-          <span style={{fontSize: "28px"}}>
-          Connect with me here, these cards are clickable <br/>
+          <span style={{ fontSize: "28px" }}>
+            Connect with me here, these cards are clickable <br />
           </span>
         </p>
         <Connect />
