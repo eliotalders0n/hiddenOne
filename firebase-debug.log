@@ -1,0 +1,235 @@
+[debug] [2026-01-13T11:48:04.463Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2026-01-13T11:48:04.469Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2026-01-13T11:48:04.472Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2026-01-13T11:48:04.475Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2026-01-13T11:48:04.477Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2026-01-13T11:48:04.480Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2026-01-13T11:48:04.480Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-13T11:48:04.481Z] > authorizing via signed-in user (eliot.alderson20@gmail.com)
+[debug] [2026-01-13T11:48:04.481Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-13T11:48:04.481Z] > authorizing via signed-in user (eliot.alderson20@gmail.com)
+[debug] [2026-01-13T11:48:04.482Z] No OAuth tokens found
+[debug] [2026-01-13T11:48:04.482Z] No OAuth tokens found
+[debug] [2026-01-13T11:48:04.483Z] > refreshing access token with scopes: []
+[debug] [2026-01-13T11:48:04.485Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-13T11:48:04.485Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-13T11:48:04.535Z] No OAuth tokens found
+[debug] [2026-01-13T11:48:04.535Z] No OAuth tokens found
+[debug] [2026-01-13T11:48:04.535Z] > refreshing access token with scopes: []
+[debug] [2026-01-13T11:48:04.535Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-13T11:48:04.535Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-13T11:48:04.540Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-13T11:48:04.540Z] > authorizing via signed-in user (eliot.alderson20@gmail.com)
+[debug] [2026-01-13T11:48:04.541Z] No OAuth tokens found
+[debug] [2026-01-13T11:48:04.541Z] No OAuth tokens found
+[debug] [2026-01-13T11:48:04.541Z] > refreshing access token with scopes: []
+[debug] [2026-01-13T11:48:04.541Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-13T11:48:04.541Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-13T11:48:05.969Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-13T11:48:05.969Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-13T11:48:05.986Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/pukutamwanza/billingInfo [none]
+[debug] [2026-01-13T11:48:06.030Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-13T11:48:06.030Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-13T11:48:06.044Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/pukutamwanza/billingInfo [none]
+[debug] [2026-01-13T11:48:06.249Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-13T11:48:06.249Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-13T11:48:06.284Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/pukutamwanza/billingInfo [none]
+[debug] [2026-01-13T11:48:07.272Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/pukutamwanza/billingInfo 200
+[debug] [2026-01-13T11:48:07.273Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/pukutamwanza/billingInfo {"name":"projects/pukutamwanza/billingInfo","projectId":"pukutamwanza","billingAccountName":"","billingEnabled":false}
+[debug] [2026-01-13T11:48:07.273Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2026-01-13T11:48:07.282Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.282Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.283Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.283Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.283Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.283Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.283Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.283Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.284Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.284Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.284Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.284Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.284Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.284Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.299Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.299Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.299Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.299Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.299Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firestore.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.299Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firestore.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.300Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/storage.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.300Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/storage.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.302Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.302Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.304Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/identitytoolkit.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.304Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/identitytoolkit.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.306Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/fcm.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.306Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/fcm.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.307Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.307Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.308Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseremoteconfig.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.308Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseremoteconfig.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.309Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.309Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.310Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseio.com [none]
+[debug] [2026-01-13T11:48:07.310Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseio.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.324Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/pukutamwanza/billingInfo 200
+[debug] [2026-01-13T11:48:07.324Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/pukutamwanza/billingInfo {"name":"projects/pukutamwanza/billingInfo","projectId":"pukutamwanza","billingAccountName":"","billingEnabled":false}
+[debug] [2026-01-13T11:48:07.324Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2026-01-13T11:48:07.324Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.324Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.325Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.325Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.325Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.325Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.325Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.325Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.326Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.326Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.326Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.326Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.326Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.326Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.333Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.334Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.334Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.334Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.334Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firestore.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.334Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firestore.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.335Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/storage.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.336Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/storage.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.337Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.337Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.338Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/identitytoolkit.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.338Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/identitytoolkit.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.339Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/fcm.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.339Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/fcm.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.340Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.340Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.341Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseremoteconfig.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.341Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseremoteconfig.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.342Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.342Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.344Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseio.com [none]
+[debug] [2026-01-13T11:48:07.344Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseio.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.358Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/pukutamwanza/billingInfo 200
+[debug] [2026-01-13T11:48:07.358Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/pukutamwanza/billingInfo {"name":"projects/pukutamwanza/billingInfo","projectId":"pukutamwanza","billingAccountName":"","billingEnabled":false}
+[debug] [2026-01-13T11:48:07.358Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2026-01-13T11:48:07.358Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.358Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.359Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.359Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.360Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.360Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.360Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.361Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.363Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.363Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.363Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.363Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.364Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.364Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.367Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.368Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.368Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.369Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:07.369Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firestore.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.369Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firestore.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.370Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/storage.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.370Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/storage.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.371Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.371Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.371Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/identitytoolkit.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.371Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/identitytoolkit.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.372Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/fcm.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.372Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/fcm.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.373Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.373Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.374Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseremoteconfig.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.374Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseremoteconfig.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.375Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-01-13T11:48:07.375Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:07.379Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseio.com [none]
+[debug] [2026-01-13T11:48:07.380Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseio.com x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-01-13T11:48:09.787Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseio.com 403
+[debug] [2026-01-13T11:48:09.787Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseio.com [omitted]
+[debug] [2026-01-13T11:48:09.841Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseremoteconfig.googleapis.com 200
+[debug] [2026-01-13T11:48:09.841Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseremoteconfig.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:09.883Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/fcm.googleapis.com 200
+[debug] [2026-01-13T11:48:09.883Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/fcm.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:09.936Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/cloudfunctions.googleapis.com 200
+[debug] [2026-01-13T11:48:09.937Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:09.937Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firestore.googleapis.com 200
+[debug] [2026-01-13T11:48:09.937Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firestore.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:09.938Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/identitytoolkit.googleapis.com 200
+[debug] [2026-01-13T11:48:09.938Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/identitytoolkit.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:09.989Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-13T11:48:09.989Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:09.990Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/storage.googleapis.com 200
+[debug] [2026-01-13T11:48:09.990Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/storage.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:10.034Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-01-13T11:48:10.035Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:10.303Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2026-01-13T11:48:10.305Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2026-01-13T11:48:10.305Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2026-01-13T11:48:10.306Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-13T11:48:10.306Z] > authorizing via signed-in user (eliot.alderson20@gmail.com)
+[debug] [2026-01-13T11:48:10.306Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:10.306Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:10.306Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/pukutamwanza/billingInfo [none]
+[debug] [2026-01-13T11:48:10.394Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2026-01-13T11:48:10.405Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2026-01-13T11:48:10.406Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2026-01-13T11:48:10.407Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-13T11:48:10.407Z] > authorizing via signed-in user (eliot.alderson20@gmail.com)
+[debug] [2026-01-13T11:48:10.407Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:10.407Z] Checked if tokens are valid: true, expires at: 1768308485249
+[debug] [2026-01-13T11:48:10.407Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/pukutamwanza/billingInfo [none]
+[debug] [2026-01-13T11:48:10.687Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/pukutamwanza/billingInfo 200
+[debug] [2026-01-13T11:48:10.687Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/pukutamwanza/billingInfo {"name":"projects/pukutamwanza/billingInfo","projectId":"pukutamwanza","billingAccountName":"","billingEnabled":false}
+[debug] [2026-01-13T11:48:10.687Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2026-01-13T11:48:10.688Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2026-01-13T11:48:10.688Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-13T11:48:10.689Z] > authorizing via signed-in user (eliot.alderson20@gmail.com)
+[debug] [2026-01-13T11:48:10.850Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/pukutamwanza/billingInfo 200
+[debug] [2026-01-13T11:48:10.851Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/pukutamwanza/billingInfo {"name":"projects/pukutamwanza/billingInfo","projectId":"pukutamwanza","billingAccountName":"","billingEnabled":false}
+[debug] [2026-01-13T11:48:10.851Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2026-01-13T11:48:10.852Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2026-01-13T11:48:10.853Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-13T11:48:10.853Z] > authorizing via signed-in user (eliot.alderson20@gmail.com)
+[debug] [2026-01-13T11:48:11.193Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseio.com 403
+[debug] [2026-01-13T11:48:11.193Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseio.com [omitted]
+[debug] [2026-01-13T11:48:11.193Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseio.com 403
+[debug] [2026-01-13T11:48:11.194Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseio.com [omitted]
+[debug] [2026-01-13T11:48:11.511Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseremoteconfig.googleapis.com 200
+[debug] [2026-01-13T11:48:11.511Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseremoteconfig.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:11.549Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseremoteconfig.googleapis.com 200
+[debug] [2026-01-13T11:48:11.549Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseremoteconfig.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:11.591Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/identitytoolkit.googleapis.com 200
+[debug] [2026-01-13T11:48:11.592Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/identitytoolkit.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:11.657Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-01-13T11:48:11.657Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:11.657Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/fcm.googleapis.com 200
+[debug] [2026-01-13T11:48:11.657Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/fcm.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:11.691Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firestore.googleapis.com 200
+[debug] [2026-01-13T11:48:11.691Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firestore.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:11.692Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/identitytoolkit.googleapis.com 200
+[debug] [2026-01-13T11:48:11.692Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/identitytoolkit.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:11.718Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-13T11:48:11.718Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:11.719Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/fcm.googleapis.com 200
+[debug] [2026-01-13T11:48:11.719Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/fcm.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:11.747Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-01-13T11:48:11.748Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:11.748Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/storage.googleapis.com 200
+[debug] [2026-01-13T11:48:11.748Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/storage.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:11.783Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-13T11:48:11.783Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:11.784Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/storage.googleapis.com 200
+[debug] [2026-01-13T11:48:11.784Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/storage.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:11.815Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/cloudfunctions.googleapis.com 200
+[debug] [2026-01-13T11:48:11.815Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:11.816Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firestore.googleapis.com 200
+[debug] [2026-01-13T11:48:11.816Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/firestore.googleapis.com [omitted]
+[debug] [2026-01-13T11:48:12.997Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/cloudfunctions.googleapis.com 200
+[debug] [2026-01-13T11:48:12.997Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pukutamwanza/services/cloudfunctions.googleapis.com [omitted]
