@@ -17,12 +17,40 @@ const HeroSection = () => {
       <Container maxW="1400px">
         <Flex
           direction={{ base: 'column', lg: 'row' }}
-          align={{ base: 'flex-start', lg: 'center' }}
+          align={{ base: 'center', lg: 'center' }}
           justify="space-between"
-          gap={{ base: 12, lg: 16 }}
+          gap={{ base: 8, lg: 16 }}
         >
-          {/* Left side - Text content */}
-          <VStack align="flex-start" spacing={8} flex={1}>
+          {/* Portrait - Shows first on mobile, right side on desktop */}
+          <MotionBox
+            flex={1}
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            maxW={{ base: "280px", md: "380px", lg: "540px" }}
+            order={{ base: 1, lg: 2 }}
+            w="full"
+          >
+            <Box
+              w="full"
+              borderRadius="18px"
+              overflow="hidden"
+            >
+              <Image
+                src="/mono.png"
+                alt="Pukuta Mwanza Portrait"
+                w="100%"
+                h="auto"
+                objectFit="cover"
+              />
+            </Box>
+          </MotionBox>
+
+          {/* Text content - Shows second on mobile, left side on desktop */}
+          <VStack align="flex-start" spacing={8} flex={1} order={{ base: 2, lg: 1 }}>
             {/* Stats */}
             <HStack spacing={12} flexWrap="wrap">
               <MotionBox
@@ -92,33 +120,6 @@ const HeroSection = () => {
               Scroll down ↓
             </MotionText>
           </VStack>
-
-          {/* Right side - Portrait */}
-          <MotionBox
-            flex={1}
-            display={{ base: 'none', lg: 'flex' }}
-            justifyContent="center"
-            alignItems="center"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            maxW="540px"
-          >
-            <Box
-              w="full"
-              maxW="540px"
-              borderRadius="18px"
-              overflow="hidden"
-            >
-              <Image
-                src="/mono.png"
-                alt="Pukuta Mwanza Portrait"
-                w="100%"
-                h="auto"
-                objectFit="cover"
-              />
-            </Box>
-          </MotionBox>
         </Flex>
       </Container>
     </Box>
