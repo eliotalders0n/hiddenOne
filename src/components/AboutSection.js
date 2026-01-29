@@ -54,7 +54,7 @@ const AboutSection = () => {
                 </Heading>
 
                 <Text fontSize="lg" color="secondary" lineHeight="tall">
-                  I'm specialize in turning complex problems into elegant
+                  I specialize in turning complex problems into elegant
                   solutions. My approach blends creativity with strategic thinking
                   to deliver designs that not only look great but work seamlessly.
                   Ready to start your next project?
