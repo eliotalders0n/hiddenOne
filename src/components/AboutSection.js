@@ -164,12 +164,7 @@ const AboutSection = () => {
               style={{ y }}
               maxW={{ base: "100%", lg: "500px" }}
             >
-              <Box
-                position="relative"
-                borderRadius="3xl"
-                overflow="hidden"
-                bg="#222222"
-              >
+              <Box position="relative" borderRadius="3xl" overflow="hidden">
                 <Image
                   src="/me2.png"
                   alt="Pukuta Mwanza"

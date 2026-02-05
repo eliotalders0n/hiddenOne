@@ -103,7 +103,7 @@ const HeroSection = () => {
         <AnimatePresence mode="wait">
           <MotionText
             key={greetingIndex}
-            fontSize={{ base: "200px", md: "350px", lg: "500px" }}
+            fontSize={{ base: "150px", md: "300px", lg: "400px" }}
             fontWeight="900"
             color="#222222"
             opacity={0.03}
@@ -369,17 +369,6 @@ const HeroSection = () => {
           </VStack>
         </Flex>
       </Container>
-
-      {/* Bottom decorative line */}
-      <Box
-        position="absolute"
-        bottom={0}
-        left={0}
-        right={0}
-        h="2px"
-        bg="#222222"
-        opacity={0.1}
-      />
     </Box>
   );
 };

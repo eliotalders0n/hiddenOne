@@ -188,17 +188,45 @@ const Navigation = () => {
       observerOptions,
     );
 
-    // Observe sections
-    const sectionElements = document.querySelectorAll("[id]");
-    sectionElements.forEach((el) => {
-      if (["about", "portfolio", "experience", "contact"].includes(el.id)) {
-        observer.observe(el);
-      }
+    // Function to observe all relevant elements
+    const observeElements = () => {
+      // Observe sections
+      const sectionElements = document.querySelectorAll("[id]");
+      sectionElements.forEach((el) => {
+        if (["about", "portfolio", "experience", "contact"].includes(el.id)) {
+          observer.observe(el);
+        }
+      });
+
+      // Observe portfolio projects (they have data-project attribute)
+      const projectElements = document.querySelectorAll("[data-project]");
+      projectElements.forEach((el) => observer.observe(el));
+    };
+
+    // Initial observation with delay to ensure DOM is ready
+    const timeoutId = setTimeout(observeElements, 100);
+
+    // MutationObserver to catch dynamically added project elements
+    const mutationObserver = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        mutation.addedNodes.forEach((node) => {
+          if (node.nodeType === 1) {
+            // Element node
+            if (node.dataset?.project) {
+              observer.observe(node);
+            }
+            // Also check children
+            const projectChildren = node.querySelectorAll?.("[data-project]");
+            projectChildren?.forEach((el) => observer.observe(el));
+          }
+        });
+      });
     });
 
-    // Observe portfolio projects (they have min-h-screen)
-    const projectElements = document.querySelectorAll("[data-project]");
-    projectElements.forEach((el) => observer.observe(el));
+    mutationObserver.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
 
     // Check if at top
     const handleScroll = () => {
@@ -210,7 +238,9 @@ const Navigation = () => {
     window.addEventListener("scroll", handleScroll);
 
     return () => {
+      clearTimeout(timeoutId);
       observer.disconnect();
+      mutationObserver.disconnect();
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
