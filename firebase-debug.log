@@ -1,0 +1,22 @@
+[debug] [2026-02-05T19:41:25.237Z] ----------------------------------------------------------------------
+[debug] [2026-02-05T19:41:25.246Z] Command:       /usr/local/Cellar/node/24.10.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2026-02-05T19:41:25.246Z] CLI Version:   14.15.2
+[debug] [2026-02-05T19:41:25.246Z] Platform:      darwin
+[debug] [2026-02-05T19:41:25.247Z] Node Version:  v24.10.0
+[debug] [2026-02-05T19:41:25.247Z] Time:          Thu Feb 05 2026 21:41:25 GMT+0200 (Central Africa Time)
+[debug] [2026-02-05T19:41:25.247Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-02-05T19:41:25.490Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rewrites"}
+[debug] [2026-02-05T19:41:25.500Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-02-05T19:41:25.510Z] > authorizing via signed-in user (eliot.alderson20@gmail.com)
+[debug] [2026-02-05T19:41:25.511Z] [iam] checking project pukutamwanza for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-02-05T19:41:25.514Z] Checked if tokens are valid: true, expires at: 1770321589551
+[debug] [2026-02-05T19:41:25.514Z] Checked if tokens are valid: true, expires at: 1770321589551
+[debug] [2026-02-05T19:41:25.515Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pukutamwanza:testIamPermissions [none]
+[debug] [2026-02-05T19:41:25.516Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/pukutamwanza:testIamPermissions x-goog-quota-user=projects/pukutamwanza
+[debug] [2026-02-05T19:41:25.516Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pukutamwanza:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-02-05T19:41:29.070Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pukutamwanza:testIamPermissions 200
+[debug] [2026-02-05T19:41:29.070Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pukutamwanza:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-02-05T19:41:29.071Z] Checked if tokens are valid: true, expires at: 1770321589551
+[debug] [2026-02-05T19:41:29.071Z] Checked if tokens are valid: true, expires at: 1770321589551
+[debug] [2026-02-05T19:41:29.071Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pukutamwanza [none]
