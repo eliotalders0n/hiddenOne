@@ -1,30 +1,47 @@
-import { Box, Container, Text, HStack, Link, Flex, VStack } from '@chakra-ui/react';
+import {
+  Box,
+  Container,
+  Text,
+  HStack,
+  Link,
+  Flex,
+  VStack,
+  Icon,
+} from "@chakra-ui/react";
+
+const CrossIcon = (props) => (
+  <Icon viewBox="0 0 24 24" {...props}>
+    <path fill="currentColor" d="M11 2h2v7h7v2h-7v11h-2V11H4V9h7V2z" />
+  </Icon>
+);
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = [
-    { name: 'Home', href: '#' },
-    { name: 'About Me', href: '#about' },
-    { name: 'Portfolio', href: '#portfolio' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Contact', href: '#contact' },
+    { name: "Home", href: "#" },
+    { name: "About Me", href: "#about" },
+    { name: "Portfolio", href: "#portfolio" },
+    { name: "Experience", href: "#experience" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
     <Box as="footer" bg="primary" color="white" py={12}>
       <Container maxW="1400px">
         <Flex
-          direction={{ base: 'column', md: 'row' }}
+          direction={{ base: "column", md: "row" }}
           justify="space-between"
-          align={{ base: 'center', md: 'flex-start' }}
+          align="center"
           gap={8}
         >
           {/* Left side - Email */}
-          <VStack align={{ base: 'center', md: 'flex-start' }} spacing={2}>
-            <Text fontSize="2xl" fontWeight="bold" mb={2}>
-              PM
-            </Text>
+          <VStack align={{ base: "center", md: "flex-start" }} spacing={2}>
+            <HStack spacing={3}>
+              <Text fontSize="2xl" fontWeight="bold">
+                PM
+              </Text>
+            </HStack>
             <Link
               href="https://appsetstudio.com/"
               fontSize="lg"
@@ -34,11 +51,16 @@ const Footer = () => {
             </Link>
           </VStack>
 
+          {/* Center - Cross Icon */}
+          <Box display={{ base: "none", md: "block" }}>
+            <CrossIcon boxSize={"77px"} />
+          </Box>
+
           {/* Right side - Navigation */}
           <HStack
             spacing={6}
             flexWrap="wrap"
-            justify={{ base: 'center', md: 'flex-end' }}
+            justify={{ base: "center", md: "flex-end" }}
           >
             {footerLinks.map((link) => (
               <Link
