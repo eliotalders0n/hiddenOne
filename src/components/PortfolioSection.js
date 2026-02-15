@@ -9,175 +9,62 @@ import {
   Badge,
   Image,
   Flex,
+  Spinner,
 } from "@chakra-ui/react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
+import { db } from "../firebase_config";
+import { collection, getDocs, orderBy, query } from "firebase/firestore";
 
 const MotionBox = motion(Box);
 const MotionText = motion(Text);
 
+// Color palette for projects
+const colors = {
+  mustard: "#E5A030",
+  red: "#D94A4A",
+  teal: "#5FBFBF",
+  navy: "#1A2B4A",
+  white: "#FFFFFF",
+  black: "#222222",
+  coral: "#E07B53",
+  purple: "#7B68EE",
+  forest: "#2D5A4A",
+  pink: "#E84A7F",
+};
+
 const PortfolioSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  // Bold color palette inspired by the reference
-  const colors = {
-    mustard: "#E5A030",
-    red: "#D94A4A",
-    teal: "#5FBFBF",
-    navy: "#1A2B4A",
-    white: "#FFFFFF",
-    black: "#222222",
-    coral: "#E07B53",
-    purple: "#7B68EE",
-    forest: "#2D5A4A",
-    pink: "#E84A7F",
-  };
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const q = query(collection(db, "projects"), orderBy("order", "asc"));
+        const snapshot = await getDocs(q);
+        const projectsData = snapshot.docs.map((doc) => {
+          const data = doc.data();
+          return {
+            ...data,
+            id: doc.id,
+            number: String(data.order).padStart(2, "0"),
+            bgColor: colors[data.bgColor] || colors.teal,
+            textColor: colors[data.textColor] || colors.black,
+          };
+        });
+        setProjects(projectsData);
+      } catch (error) {
+        console.error("Error fetching projects:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-  // All projects with full stories and bold styling
-  const allProjects = [
-    {
-      number: "01",
-      title: "Ngwee",
-      tagline: "REDEFINING MUSIC OWNERSHIP",
-      description: "Buy and Sell limited edition music",
-      story:
-        "Ngwee is a revolutionary platform that brings the concept of limited edition releases to digital music. Artists can mint exclusive tracks, and fans can own, trade, and collect rare musical pieces.",
-      category: "PASSION PROJECT",
-      link: "https://ngwee.web.app/",
-      image: "/ngwee.png",
-      features: ["Limited Editions", "Artist Direct", "Collectibles"],
-      bgColor: colors.mustard,
-      textColor: colors.black,
-    },
-    {
-      number: "02",
-      title: "Slushy",
-      tagline: "SELF-CARE MADE SIMPLE",
-      description: "Book your next self care appointment easily",
-      story:
-        "Slushy transforms how people discover and book self-care services. From salons to spas, the platform offers a seamless booking experience with real-time availability.",
-      category: "UI/UX DESIGN",
-      link: "https://slushystore.web.app",
-      image: "/slushy.png",
-      features: ["Easy Booking", "Real-time", "Reviews"],
-      bgColor: colors.red,
-      textColor: colors.white,
-    },
-    {
-      number: "03",
-      title: "Kamba",
-      tagline: "WHERE LOVE MEETS DIGITAL",
-      description: "The premier digital-first wedding experience in Zambia.",
-      story:
-        "Kamba reimagines wedding planning for the digital age. From creating beautiful digital invitations to managing RSVPs and sharing memories.",
-      category: "WEB DEVELOPMENT",
-      link: "https://kamba-5ab4b.web.app/",
-      image: "/kamba.png",
-      features: ["Digital Invites", "RSVP", "Memories"],
-      bgColor: colors.teal,
-      textColor: colors.black,
-    },
-    {
-      number: "04",
-      title: "Sellr",
-      tagline: "E-COMMERCE WITH PERSONALITY",
-      description: "An e-commerce platform with personality",
-      story:
-        "Sellr brings character to online shopping. A full-stack e-commerce solution that allows businesses to create unique storefronts that reflect their brand personality.",
-      category: "FULL STACK",
-      link: "https://sellr-af.web.app/",
-      image: "/selr.png",
-      features: ["Custom Stores", "Payments", "Analytics"],
-      bgColor: colors.navy,
-      textColor: colors.white,
-    },
-    {
-      number: "05",
-      title: "Digiport",
-      tagline: "IDENTITY REIMAGINED",
-      description: "Digital passport solution demo",
-      story:
-        "Digiport demonstrates the future of digital identity management. A secure, user-friendly approach to passport and identity verification in the digital age.",
-      category: "WEB APPLICATION",
-      link: "https://digiport-dc.web.app/",
-      image: "/Digiport.png",
-      features: ["Secure ID", "Verification", "Digital-First"],
-      bgColor: colors.coral,
-      textColor: colors.white,
-    },
-    {
-      number: "06",
-      title: "Academia",
-      tagline: "KNOWLEDGE SHARED",
-      description: "Stackoverflow inspired Education platform",
-      story:
-        "Academia creates a community-driven learning environment where students and educators can share knowledge, ask questions, and grow together.",
-      category: "DATA MODELS",
-      link: "https://academia-af.web.app/",
-      image: "/acadamia.png",
-      features: ["Q&A Platform", "Community", "Learning"],
-      bgColor: colors.purple,
-      textColor: colors.white,
-    },
-    {
-      number: "07",
-      title: "Narative",
-      tagline: "CONVERSATIONS TO INSIGHTS",
-      description: "Translate conversations into insight",
-      story:
-        "Narative transforms raw conversations and data into actionable insights. Powerful analytics and processing tools for understanding customer feedback and communications.",
-      category: "DATA PROCESSING",
-      link: "https://narative-af.web.app/",
-      image: "/narative.png",
-      features: ["Analytics", "NLP", "Insights"],
-      bgColor: colors.forest,
-      textColor: colors.white,
-    },
-    {
-      number: "08",
-      title: "PIA",
-      tagline: "AI-POWERED IDENTITY",
-      description: "ADK-powered identity management solution",
-      story:
-        "Personal Identity Agent leverages the power of AI through ADK to create intelligent identity management solutions for the modern web.",
-      category: "AI DEVELOPMENT",
-      link: "https://pia-xi.vercel.app/",
-      image: "/Personal Identity Agent - ADK.png",
-      features: ["AI-Powered", "ADK", "Smart Auth"],
-      bgColor: colors.pink,
-      textColor: colors.white,
-    },
-    {
-      number: "09",
-      title: "Git Switcher",
-      tagline: "SEAMLESS ACCOUNT MANAGEMENT",
-      description: "NPM package for seamless git account management",
-      story:
-        "A developer tool that makes switching between multiple Git accounts effortless. Published on NPM for the global developer community.",
-      category: "DEVELOPER TOOLS",
-      link: "https://www.npmjs.com/package/@variant96/git-account-switcher",
-      image: "/git account switcher - npm.png",
-      features: ["NPM Package", "CLI Tool", "Multi-Account"],
-      bgColor: colors.mustard,
-      textColor: colors.black,
-    },
-    {
-      number: "10",
-      title: "EATI",
-      tagline: "ELECTRONIC ACCESS TO INFORMATION",
-      description: "Electronic Access to Information",
-      story:
-        "EATI (formerly ZANIS) provides electronic access to government information, making public data accessible and transparent for all citizens.",
-      category: "GOVERNMENT TECH",
-      link: "https://zanis-app.web.app/",
-      image: "/zanis.png",
-      features: ["Gov Tech", "Public Data", "Transparency"],
-      bgColor: colors.navy,
-      textColor: colors.white,
-    },
-  ];
+    fetchProjects();
+  }, []);
 
   // Featured Project Card Component - Full viewport
   const FeaturedProjectCard = ({ project }) => {
@@ -465,9 +352,15 @@ const PortfolioSection = () => {
       </Box>
 
       {/* All Projects - Full Viewport Each */}
-      {allProjects.map((project, index) => (
-        <FeaturedProjectCard key={index} project={project} />
-      ))}
+      {loading ? (
+        <Box py={20} textAlign="center">
+          <Spinner size="xl" color="primary" />
+        </Box>
+      ) : (
+        projects.map((project) => (
+          <FeaturedProjectCard key={project.id} project={project} />
+        ))
+      )}
     </Box>
   );
 };
