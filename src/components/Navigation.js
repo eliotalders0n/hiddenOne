@@ -18,6 +18,8 @@ import {
   useSpring,
 } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
+import { db } from "../firebase_config";
+import { collection, getDocs, query, orderBy } from "firebase/firestore";
 
 const MotionBox = motion(Box);
 const MotionText = motion(Text);
@@ -44,19 +46,54 @@ const Navigation = () => {
   const navScale = useSpring(1, springConfig);
   const navRotate = useSpring(0, { stiffness: 300, damping: 20 });
 
-  // Project colors from portfolio
-  const projectColors = {
-    ngwee: { bg: "#E5A030", text: "#222222", name: "NGWEE" },
-    slushy: { bg: "#D94A4A", text: "#FFFFFF", name: "SLUSHY" },
-    kamba: { bg: "#5FBFBF", text: "#222222", name: "KAMBA" },
-    sellr: { bg: "#1A2B4A", text: "#FFFFFF", name: "SELLR" },
-    digiport: { bg: "#E07B53", text: "#FFFFFF", name: "DIGIPORT" },
-    academia: { bg: "#7B68EE", text: "#FFFFFF", name: "ACADEMIA" },
-    narative: { bg: "#2D5A4A", text: "#FFFFFF", name: "NARATIVE" },
-    pia: { bg: "#E84A7F", text: "#FFFFFF", name: "PIA" },
-    "git-switcher": { bg: "#E5A030", text: "#222222", name: "GIT SWITCHER" },
-    eati: { bg: "#1A2B4A", text: "#FFFFFF", name: "EATI" },
+  // Project colors from Firebase
+  const [projectColors, setProjectColors] = useState({});
+
+  // Legacy color palette for backwards compatibility
+  const legacyColors = {
+    mustard: "#E5A030",
+    red: "#D94A4A",
+    teal: "#5FBFBF",
+    navy: "#1A2B4A",
+    white: "#FFFFFF",
+    black: "#222222",
+    coral: "#E07B53",
+    purple: "#7B68EE",
+    forest: "#2D5A4A",
+    pink: "#E84A7F",
   };
+
+  // Helper to resolve color (supports both hex and legacy named colors)
+  const resolveColor = (color, fallback) => {
+    if (!color) return fallback;
+    if (color.startsWith("#")) return color;
+    return legacyColors[color] || fallback;
+  };
+
+  // Fetch project colors from Firebase
+  useEffect(() => {
+    const fetchProjectColors = async () => {
+      try {
+        const q = query(collection(db, "projects"), orderBy("order", "asc"));
+        const snapshot = await getDocs(q);
+        const colors = {};
+        snapshot.docs.forEach((doc) => {
+          const data = doc.data();
+          // Create a slug from the title for the key
+          const slug = data.title?.toLowerCase().replace(/\s+/g, "-") || doc.id;
+          colors[slug] = {
+            bg: resolveColor(data.bgColor, "#5FBFBF"),
+            text: resolveColor(data.textColor, "#222222"),
+            name: data.title?.toUpperCase() || "PROJECT",
+          };
+        });
+        setProjectColors(colors);
+      } catch (error) {
+        console.error("Error fetching project colors:", error);
+      }
+    };
+    fetchProjectColors();
+  }, []);
 
   const sections = [
     { id: "home", name: "HOME", number: "00" },
