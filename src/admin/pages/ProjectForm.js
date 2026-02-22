@@ -12,10 +12,10 @@ import {
   Image,
   useToast,
   Spinner,
-} from '@chakra-ui/react';
-import { useState, useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import { db, storage } from '../../firebase_config';
+} from "@chakra-ui/react";
+import { useState, useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { db, storage } from "../../firebase_config";
 import {
   doc,
   getDoc,
@@ -25,8 +25,8 @@ import {
   getDocs,
   query,
   orderBy,
-} from 'firebase/firestore';
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+} from "firebase/firestore";
+import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
 // Predefined project color presets
 const projectColorPresets = {
@@ -51,18 +51,18 @@ export default function ProjectForm() {
   const [loading, setLoading] = useState(isEditing);
   const [saving, setSaving] = useState(false);
   const [imageFile, setImageFile] = useState(null);
-  const [imagePreview, setImagePreview] = useState('');
+  const [imagePreview, setImagePreview] = useState("");
 
   const [form, setForm] = useState({
-    title: '',
-    category: '',
-    tagline: '',
-    story: '',
-    features: '',
-    image: '',
-    bgColor: '#5FBFBF',
-    textColor: '#222222',
-    link: '',
+    title: "",
+    category: "",
+    tagline: "",
+    story: "",
+    features: "",
+    image: "",
+    bgColor: "#5FBFBF",
+    textColor: "#222222",
+    link: "",
     order: 1,
   });
 
@@ -81,21 +81,21 @@ export default function ProjectForm() {
     if (isEditing) {
       const fetchProject = async () => {
         try {
-          const docRef = doc(db, 'projects', id);
+          const docRef = doc(db, "projects", id);
           const docSnap = await getDoc(docRef);
           if (docSnap.exists()) {
             const data = docSnap.data();
             setForm({
               ...data,
               features: Array.isArray(data.features)
-                ? data.features.join(', ')
-                : data.features || '',
+                ? data.features.join(", ")
+                : data.features || "",
             });
-            setImagePreview(data.image || '');
+            setImagePreview(data.image || "");
           }
         } catch (error) {
-          console.error('Error fetching project:', error);
-          toast({ title: 'Error loading project', status: 'error' });
+          console.error("Error fetching project:", error);
+          toast({ title: "Error loading project", status: "error" });
         }
         setLoading(false);
       };
@@ -103,15 +103,12 @@ export default function ProjectForm() {
     } else {
       const getNextOrder = async () => {
         try {
-          const q = query(
-            collection(db, 'projects'),
-            orderBy('order', 'desc')
-          );
+          const q = query(collection(db, "projects"), orderBy("order", "desc"));
           const snapshot = await getDocs(q);
           const maxOrder = snapshot.docs[0]?.data()?.order || 0;
           setForm((prev) => ({ ...prev, order: maxOrder + 1 }));
         } catch (error) {
-          console.error('Error getting order:', error);
+          console.error("Error getting order:", error);
         }
       };
       getNextOrder();
@@ -136,7 +133,7 @@ export default function ProjectForm() {
       if (imageFile) {
         const storageRef = ref(
           storage,
-          `projects/${Date.now()}_${imageFile.name}`
+          `projects/${Date.now()}_${imageFile.name}`,
         );
         await uploadBytes(storageRef, imageFile);
         imageUrl = await getDownloadURL(storageRef);
@@ -146,24 +143,24 @@ export default function ProjectForm() {
         ...form,
         image: imageUrl,
         features: form.features
-          .split(',')
+          .split(",")
           .map((f) => f.trim())
           .filter(Boolean),
         order: Number(form.order),
       };
 
       if (isEditing) {
-        await setDoc(doc(db, 'projects', id), projectData);
-        toast({ title: 'Project updated', status: 'success' });
+        await setDoc(doc(db, "projects", id), projectData);
+        toast({ title: "Project updated", status: "success" });
       } else {
-        await addDoc(collection(db, 'projects'), projectData);
-        toast({ title: 'Project created', status: 'success' });
+        await addDoc(collection(db, "projects"), projectData);
+        toast({ title: "Project created", status: "success" });
       }
 
-      navigate('/root/projects');
+      navigate("/root/projects");
     } catch (error) {
-      console.error('Error:', error);
-      toast({ title: 'Error saving project', status: 'error' });
+      console.error("Error:", error);
+      toast({ title: "Error saving project", status: "error" });
     } finally {
       setSaving(false);
     }
@@ -180,7 +177,7 @@ export default function ProjectForm() {
   return (
     <Box maxW="800px">
       <Heading size="lg" mb={8} color="#222222">
-        {isEditing ? 'Edit Project' : 'New Project'}
+        {isEditing ? "Edit Project" : "New Project"}
       </Heading>
 
       <form onSubmit={handleSubmit}>
@@ -191,7 +188,7 @@ export default function ProjectForm() {
               value={form.title}
               onChange={(e) => setForm({ ...form, title: e.target.value })}
               borderColor="#7B7B7B"
-              _focus={{ borderColor: '#222222' }}
+              _focus={{ borderColor: "#222222" }}
             />
           </FormControl>
 
@@ -271,7 +268,11 @@ export default function ProjectForm() {
                   borderRadius="md"
                   fontSize="xs"
                   fontWeight="bold"
-                  border={form.bgColor === preset.bg ? '3px solid #222222' : '3px solid transparent'}
+                  border={
+                    form.bgColor === preset.bg
+                      ? "3px solid #222222"
+                      : "3px solid transparent"
+                  }
                   _hover={{ opacity: 0.8 }}
                   transition="all 0.2s"
                 >
@@ -288,7 +289,9 @@ export default function ProjectForm() {
                 <Input
                   type="color"
                   value={form.bgColor}
-                  onChange={(e) => setForm({ ...form, bgColor: e.target.value })}
+                  onChange={(e) =>
+                    setForm({ ...form, bgColor: e.target.value })
+                  }
                   w="60px"
                   h="40px"
                   p={1}
@@ -296,7 +299,9 @@ export default function ProjectForm() {
                 />
                 <Input
                   value={form.bgColor}
-                  onChange={(e) => setForm({ ...form, bgColor: e.target.value })}
+                  onChange={(e) =>
+                    setForm({ ...form, bgColor: e.target.value })
+                  }
                   placeholder="#FFFFFF"
                   borderColor="#7B7B7B"
                 />
@@ -309,7 +314,9 @@ export default function ProjectForm() {
                 <Input
                   type="color"
                   value={form.textColor}
-                  onChange={(e) => setForm({ ...form, textColor: e.target.value })}
+                  onChange={(e) =>
+                    setForm({ ...form, textColor: e.target.value })
+                  }
                   w="60px"
                   h="40px"
                   p={1}
@@ -317,7 +324,9 @@ export default function ProjectForm() {
                 />
                 <Input
                   value={form.textColor}
-                  onChange={(e) => setForm({ ...form, textColor: e.target.value })}
+                  onChange={(e) =>
+                    setForm({ ...form, textColor: e.target.value })
+                  }
                   placeholder="#222222"
                   borderColor="#7B7B7B"
                 />
@@ -325,14 +334,11 @@ export default function ProjectForm() {
             </FormControl>
           </HStack>
 
-          <Box
-            p={4}
-            borderRadius="md"
-            bg={form.bgColor}
-            color={form.textColor}
-          >
-            <Box fontSize="sm" fontWeight="bold">Preview</Box>
-            <Box fontSize="lg">{form.title || 'Project Title'}</Box>
+          <Box p={4} borderRadius="md" bg={form.bgColor} color={form.textColor}>
+            <Box fontSize="sm" fontWeight="bold">
+              Preview
+            </Box>
+            <Box fontSize="lg">{form.title || "Project Title"}</Box>
           </Box>
 
           <FormControl>
@@ -361,11 +367,14 @@ export default function ProjectForm() {
               bg="#222222"
               color="white"
               isLoading={saving}
-              _hover={{ bg: '#7B7B7B' }}
+              _hover={{ bg: "#7B7B7B" }}
             >
-              {isEditing ? 'Update Project' : 'Create Project'}
+              {isEditing ? "Update Project" : "Create Project"}
             </Button>
-            <Button variant="outline" onClick={() => navigate('/root/projects')}>
+            <Button
+              variant="outline"
+              onClick={() => navigate("/root/projects")}
+            >
               Cancel
             </Button>
           </HStack>

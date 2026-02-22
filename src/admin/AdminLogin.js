@@ -30,7 +30,11 @@ export default function AdminLogin({ onLogin }) {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             borderColor="#222222"
+<<<<<<< HEAD
             _focus={{ borderColor: "#222222", boxShadow: "none" }}
+=======
+            _focus={{ borderColor: '#222222', boxShadow: 'none' }}
+>>>>>>> 6c5acfd912953b8c9a72681f8035727a03efe2a1
           />
           {error && (
             <Text color="red.500" fontSize="sm">
@@ -42,7 +46,11 @@ export default function AdminLogin({ onLogin }) {
             w="full"
             bg="#222222"
             color="white"
+<<<<<<< HEAD
             _hover={{ bg: "#7B7B7B" }}
+=======
+            _hover={{ bg: '#7B7B7B' }}
+>>>>>>> 6c5acfd912953b8c9a72681f8035727a03efe2a1
           >
             Login
           </Button>
