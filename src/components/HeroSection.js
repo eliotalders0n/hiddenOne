@@ -275,8 +275,8 @@ const HeroSection = () => {
                 animate={{ opacity: 0.6, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
               >
-                A web developer & designer passionate about creating elegant
-                digital experiences that make a difference.
+                A systems thinker with a hustler's urgency, building real-world
+                leverage, one problem at a time.
               </MotionText>
             </VStack>
 

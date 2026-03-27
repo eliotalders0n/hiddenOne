@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { db, storage } from "../../firebase_config";
+import { db } from "../../firebase_config";
 import {
   doc,
   getDoc,
@@ -26,7 +26,7 @@ import {
   query,
   orderBy,
 } from "firebase/firestore";
-import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { initGoogleDrive, uploadToGoogleDrive } from "../../utils/googleDrive";
 
 // Predefined project color presets
 const projectColorPresets = {
@@ -76,6 +76,10 @@ export default function ProjectForm() {
       }));
     }
   };
+
+  useEffect(() => {
+    initGoogleDrive();
+  }, []);
 
   useEffect(() => {
     if (isEditing) {
@@ -131,12 +135,7 @@ export default function ProjectForm() {
       let imageUrl = form.image;
 
       if (imageFile) {
-        const storageRef = ref(
-          storage,
-          `projects/${Date.now()}_${imageFile.name}`,
-        );
-        await uploadBytes(storageRef, imageFile);
-        imageUrl = await getDownloadURL(storageRef);
+        imageUrl = await uploadToGoogleDrive(imageFile, "portfolio-images");
       }
 
       const projectData = {
